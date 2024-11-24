@@ -5,5 +5,23 @@
   "projectType": "application",
   "tags": [],
   "// targets": "to see all targets run: nx show project customer-web --web",
-  "targets": {}
+  "targets": {
+    "serve": {
+      "executor": "@nx/next:server",
+      "options": {
+        "buildTarget": "customer-web:build",
+        "dev": true,
+        "port": 4300
+      }
+    },
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": [
+        "dist/apps/customer-web"
+      ],
+      "options": {
+        "outputPath": "dist/apps/customer-web"
+      }
+    }
+  }
 }
