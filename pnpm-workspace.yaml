@@ -1,0 +1,7 @@
+packages:
+  - "admin-web"
+  - "admin-web-e2e"
+  - "customer-web"
+  - "customer-web-e2e"
+  - "shared"
+  - "packages/*"
